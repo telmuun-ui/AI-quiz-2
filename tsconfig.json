@@ -23,13 +23,7 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
       "@/*": ["./*"]
-=======
-      "@/*": [
-        "./src/*"
-      ]
->>>>>>> 4ad4730 (Update schema)
     }
   },
   "include": [
@@ -37,14 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-<<<<<<< HEAD
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-=======
-    "next.config.mts",
-    "../nextjs-prisma/app/page.tsx",
-    ".next/dev/types/**/*.ts"
->>>>>>> 4ad4730 (Update schema)
   ],
   "exclude": [
     "node_modules"

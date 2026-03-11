@@ -2,14 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { Button } from "../../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import {
   Card,
   CardHeader,
   CardFooter,
   CardTitle,
+  CardDescription,
   CardContent,
-} from "@/app/components/ui/card";
+} from "../../components/ui/card";
 import {
   Dialog,
   DialogTrigger,
@@ -17,7 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "../../../components/ui/dialog";
+} from "../../components/ui/dialog";
 import { ArrowLeft, BookOpen, FileText, Maximize2 } from "lucide-react";
 
 interface Article {

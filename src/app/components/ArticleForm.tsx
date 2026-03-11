@@ -2,18 +2,18 @@
 
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+  CardContent,
+  CardDescription
+} from "./ui/card";
+import { Textarea } from "./ui/textarea";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
 import { FileText, Sparkles, BookOpen, Save } from "lucide-react";
 import { toast } from "sonner";
 

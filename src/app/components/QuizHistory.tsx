@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
+  CardContent,
+} from "./ui/card";
 import { Home, RefreshCw } from "lucide-react";
 import { useRouter } from "next/navigation";
 

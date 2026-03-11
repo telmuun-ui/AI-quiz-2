@@ -1,16 +1,16 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
+  CardContent,
+} from "./ui/card";
+import { Progress } from "./ui/progress";
+import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
+import { Label } from "./ui/label";
 
 interface Question {
   id: string;

@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
+  CardContent,
+} from "./ui/card";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";

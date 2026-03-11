@@ -1,14 +1,14 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
+  CardContent,
+} from "./ui/card";
 import { formatDistanceToNow } from "date-fns";
 import SidebarSkeleton from "./SidebarSkeleton";
 

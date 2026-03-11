@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
+  CardFooter,
   CardTitle,
-} from "@/components/ui/card";
+  CardContent,
+} from "./ui/card";
 import { CheckCircle2, RefreshCw, XCircle } from "lucide-react";
 
 interface Question {

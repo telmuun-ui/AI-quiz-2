@@ -8,8 +8,8 @@ import {
   SignedOut,
   SignIn,
 } from "@clerk/nextjs";
-import Header from "@/src/app/components/Header";
-import { UserProvider } from "@/src/app/contexts/UserContext";
+import Header from "./components/Header";
+import { UserProvider } from "./contexts/UserContext";
 
 const inter = Inter({ subsets: ["latin"] });
 

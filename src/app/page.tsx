@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Sidebar from "@/src/app/components/Sidebar";
-import ArticleForm from "@/src/app/components/ArticleForm";
+import Sidebar from "./components/Sidebar";
+import ArticleForm from "./components/ArticleForm";
 import { toast } from "sonner";
 
 interface Article {

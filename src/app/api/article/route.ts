@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import prisma from "@/src/lib/prisma";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
@@ -7,6 +7,8 @@ const openai = new OpenAI({
 });
 
 export async function POST(req: Request) {
+
+
   try {
     const body = await req.json();
     const { title, content, userId } = body;
@@ -25,7 +27,8 @@ export async function POST(req: Request) {
       ],
     });
 
-const summary = response.choices[0].message.content ?? "No summary generated";
+    const summary =
+      response.choices[0].message.content ?? "No summary generated";
     const article = await prisma.article.create({
       data: {
         title,
@@ -37,19 +40,19 @@ const summary = response.choices[0].message.content ?? "No summary generated";
 
     return NextResponse.json(
       { message: "Successful", article },
-      { status: 201 }
+      { status: 201 },
     );
   } catch (error) {
     console.log("Error", error);
 
     return NextResponse.json(
       { message: "Article create error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
 //GET
- export async function GET(){
+export async function GET() {
   try {
     const articles = await prisma.article.findMany({
       include: {
@@ -57,16 +60,16 @@ const summary = response.choices[0].message.content ?? "No summary generated";
         quizzes: true,
       },
       orderBy: {
-        createdAt: "desc"
-      }
-    })
+        createdAt: "desc",
+      },
+    });
     return NextResponse.json(
       { message: "Successful", articles },
-      { status: 201 }
-    );;
+      { status: 201 },
+    );
   } catch (error) {
     console.log(error);
 
-    return NextResponse.json({message: "Failed"}, {status: 500})
+    return NextResponse.json({ message: "Failed" }, { status: 500 });
   }
- }
+}
